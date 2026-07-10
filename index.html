@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noureldeen Mohammad — Computer Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="trace" id="traceLine"></div>
+
+<nav>
+  <div class="nav-inner">
+    <div class="logo">nour<span class="dim">@</span>portfolio<span class="dim">:~$</span></div>
+    <div class="navlinks">
+      <a href="#about">about</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">projects</a>
+      <a href="#education">education</a>
+      <a href="#contact">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas id="particles"></canvas>
+  <div class="wrap">
+    <div class="boot" id="bootText"></div>
+    <h1 class="reveal" data-index="0">Noureldeen Mohammad<br><span>Computer Engineer</span>, security-minded.</h1>
+    <p class="role reveal" data-index="1">Third-year Computer Engineering student building things across the stack — from <strong>PIC microcontroller firmware</strong> to <strong>full C++ applications</strong> — with a growing focus on <strong>information security</strong>.</p>
+    <div class="hero-links reveal" data-index="2">
+      <a class="btn primary" href="#projects">View projects</a>
+      <a class="btn" href="https://github.com/nour12667" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="btn" href="#contact">Get in touch</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="tag reveal" data-index="0">01 · about</div>
+    <h2 class="reveal" data-index="1">Who I am</h2>
+    <div class="about-grid">
+      <div class="reveal" data-index="2">
+        <p class="lead">I'm a third-year Computer Engineering student at Beirut Arab University, splitting my time between embedded systems coursework, independent software projects, and running my family's mini market — where I've been building my own point-of-sale system from scratch.</p>
+        <p class="lead">I'm drawn to information security: how systems break, how they're defended, and how low-level understanding of hardware and code makes both possible. Outside coursework, I work through competitive programming problems and contribute to my own open-source projects on GitHub.</p>
+      </div>
+      <div class="stat-block tilt reveal" data-index="3">
+        <div class="stat-row"><span class="k">UNIVERSITY</span><span class="v">Beirut Arab University</span></div>
+        <div class="stat-row"><span class="k">PROGRAM</span><span class="v">Computer Engineering</span></div>
+        <div class="stat-row"><span class="k">YEAR</span><span class="v">3rd Year</span></div>
+        <div class="stat-row"><span class="k">CGPA</span><span class="v" id="cgpaValue" data-target="3.81">0.00</span></div>
+        <div class="stat-row"><span class="k">CERT</span><span class="v">Digital Marketing — UNICEF / Gov. of NL</span></div>
+        <div class="stat-row"><span class="k">GITHUB</span><span class="v">nour12667</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="tag reveal" data-index="0">02 · skills</div>
+    <h2 class="reveal" data-index="1">What I work with</h2>
+    <div class="skill-cols">
+      <div class="skill-card tilt reveal" data-index="2">
+        <h3>Languages</h3>
+        <ul>
+          <li>C / C++</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>PIC Assembly</li>
+        </ul>
+      </div>
+      <div class="skill-card tilt reveal" data-index="3">
+        <h3>Systems &amp; Embedded</h3>
+        <ul>
+          <li>PIC16F877A firmware</li>
+          <li>Qt GUI development</li>
+          <li>Data structures (BST, linked lists)</li>
+          <li>Circuit design (Proteus)</li>
+        </ul>
+      </div>
+      <div class="skill-card tilt reveal" data-index="4">
+        <h3>Tools &amp; Practices</h3>
+        <ul>
+          <li>Git / GitHub workflows</li>
+          <li>Object-oriented design</li>
+          <li>Competitive programming</li>
+          <li>Security fundamentals</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="tag reveal" data-index="0">03 · projects</div>
+    <h2 class="reveal" data-index="1">Selected work</h2>
+
+    <div class="project tilt reveal" data-index="2">
+      <div class="project-head">
+        <h3>Mini Market POS System</h3>
+        <span class="stack">C++ · Qt · CSV</span>
+      </div>
+      <p>A full point-of-sale system built for my family's mini market — custom singly linked list for inventory, six category-derived item classes, USB barcode scanner integration, and a report controller for monthly financial summaries.</p>
+      <div class="project-links">
+        <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
+      </div>
+    </div>
+
+    <div class="project tilt reveal" data-index="3">
+      <div class="project-head">
+        <h3>Smart AC Controller</h3>
+        <span class="stack">PIC16F877A · Assembly</span>
+      </div>
+      <p>An embedded climate-control system with LCD output, ADC-based temperature sensing, UART Bluetooth control, PWM fan speed, servo-driven vents, and four distinct operating modes — designed, schematic'd, and debugged from the ground up.</p>
+      <div class="project-links">
+        <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
+      </div>
+    </div>
+
+    <div class="project tilt reveal" data-index="4">
+      <div class="project-head">
+        <h3>Library Management System</h3>
+        <span class="stack">C · BST · Queues</span>
+      </div>
+      <p>A group data structures project implementing binary search trees, queues, and linked lists to manage book records, checkouts, and holds — built as part of coursework at BAU.</p>
+      <div class="project-links">
+        <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="tag reveal" data-index="0">04 · education</div>
+    <h2 class="reveal" data-index="1">Background</h2>
+    <div class="edu-item reveal" data-index="2">
+      <div class="yr">2023 — Present</div>
+      <div>
+        <h3>B.Sc. Computer Engineering</h3>
+        <p>Beirut Arab University · CGPA 3.81 · Coursework in embedded systems, data structures, digital electronics, and differential equations for engineering systems.</p>
+      </div>
+    </div>
+    <div class="edu-item reveal" data-index="3">
+      <div class="yr">Certificate</div>
+      <div>
+        <h3>Digital Marketing</h3>
+        <p>UNICEF &amp; Government of the Netherlands</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="tag reveal" data-index="0">05 · contact</div>
+    <h2 class="reveal" data-index="1">Let's talk</h2>
+    <p class="lead reveal" data-index="2">Open to opportunities in security, software engineering, and internship roles — and always glad to connect with fellow students or recruiters.</p>
+    <div class="contact-grid">
+      <a class="contact-card tilt reveal" data-index="3" href="https://github.com/nour12667" target="_blank" rel="noopener">
+        <div class="k">GitHub</div>
+        <div class="v">github.com/nour12667</div>
+      </a>
+      <a class="contact-card tilt reveal" data-index="4" href="https://wa.me/96171163092" target="_blank" rel="noopener">
+        <div class="k">WhatsApp</div>
+        <div class="v">+961 71 163 092</div>
+      </a>
+      <a class="contact-card tilt reveal" data-index="5" href="mailto:your.email@example.com">
+        <div class="k">Email</div>
+        <div class="v">your.email@example.com</div>
+      </a>
+      <a class="contact-card tilt reveal" data-index="6" href="#">
+        <div class="k">LinkedIn</div>
+        <div class="v">add your profile link</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  built by Noureldeen Mohammad <span class="dot">·</span> <span id="year"></span>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
