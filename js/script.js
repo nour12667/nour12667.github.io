@@ -22,7 +22,6 @@ function typeBoot(){
   let lineIndex = 0, charIndex = 0;
 
   function render(){
-    // Rebuild the boot block each tick — content is tiny, so this stays cheap.
     let html = '';
     for(let i = 0; i < lineIndex; i++){
       const l = bootLines[i];
