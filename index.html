@@ -28,14 +28,23 @@
 
 <header class="hero">
   <canvas id="particles"></canvas>
-  <div class="wrap">
-    <div class="boot" id="bootText"></div>
-    <h1 class="reveal" data-index="0">Noureldeen Mohammad<br><span>Computer Engineer</span>, security-minded.</h1>
-    <p class="role reveal" data-index="1">Third-year Computer Engineering student building things across the stack — from <strong>PIC microcontroller firmware</strong> to <strong>full C++ applications</strong> — with a growing focus on <strong>information security</strong>.</p>
-    <div class="hero-links reveal" data-index="2">
-      <a class="btn primary" href="#projects">View projects</a>
-      <a class="btn" href="https://github.com/nour12667" target="_blank" rel="noopener">GitHub ↗</a>
-      <a class="btn" href="#contact">Get in touch</a>
+  <div class="wrap hero-flex">
+    <div class="hero-text">
+      <div class="boot" id="bootText"></div>
+      <h1 class="reveal" data-index="0">Noureldeen Mohammad<br><span>Computer Engineer</span>, security-minded.</h1>
+      <p class="role reveal" data-index="1">Third-year Computer Engineering student building things across the stack — from <strong>PIC microcontroller firmware</strong> to <strong>full C++ applications</strong> — with a growing focus on <strong>information security</strong>.</p>
+      <div class="hero-links reveal" data-index="2">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn" href="https://github.com/nour12667" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-photo reveal" data-index="3">
+      <div class="photo-frame">
+        <!-- Replace img/profile.jpg with your actual photo -->
+        <img src="img/profile.jpg" alt="Noureldeen Mohammad">
+      </div>
+      <div class="photo-caption"><span class="copper">//</span> noureldeen.jpg</div>
     </div>
   </div>
 </header>
@@ -109,6 +118,7 @@
       </div>
       <p>A full point-of-sale system built for my family's mini market — custom singly linked list for inventory, six category-derived item classes, USB barcode scanner integration, and a report controller for monthly financial summaries.</p>
       <div class="project-links">
+        <a href="projects/pos-system.html">Details →</a>
         <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
       </div>
     </div>
@@ -120,6 +130,7 @@
       </div>
       <p>An embedded climate-control system with LCD output, ADC-based temperature sensing, UART Bluetooth control, PWM fan speed, servo-driven vents, and four distinct operating modes — designed, schematic'd, and debugged from the ground up.</p>
       <div class="project-links">
+        <a href="projects/smart-ac.html">Details →</a>
         <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
       </div>
     </div>
@@ -131,6 +142,7 @@
       </div>
       <p>A group data structures project implementing binary search trees, queues, and linked lists to manage book records, checkouts, and holds — built as part of coursework at BAU.</p>
       <div class="project-links">
+        <a href="projects/library-system.html">Details →</a>
         <a href="https://github.com/nour12667" target="_blank" rel="noopener">Repository ↗</a>
       </div>
     </div>
@@ -165,20 +177,53 @@
     <p class="lead reveal" data-index="2">Open to opportunities in security, software engineering, and internship roles — and always glad to connect with fellow students or recruiters.</p>
     <div class="contact-grid">
       <a class="contact-card tilt reveal" data-index="3" href="https://github.com/nour12667" target="_blank" rel="noopener">
-        <div class="k">GitHub</div>
-        <div class="v">github.com/nour12667</div>
+        <span class="c-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.73.5.9 5.33.9 11.6c0 5.02 3.26 9.28 7.77 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.16.69-3.83-1.34-3.83-1.34-.52-1.32-1.26-1.68-1.26-1.68-1.03-.7.08-.69.08-.69 1.14.08 1.74 1.17 1.74 1.17 1.01 1.73 2.65 1.23 3.3.94.1-.74.4-1.23.72-1.51-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 5.74 0c2.19-1.47 3.15-1.16 3.15-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1 0 1.52-.01 2.74-.01 3.11 0 .3.2.66.79.55A11.1 11.1 0 0 0 23.1 11.6C23.1 5.33 18.27.5 12 .5Z"/></svg>
+        </span>
+        <span class="c-text">
+          <div class="k">GitHub</div>
+          <div class="v">github.com/nour12667</div>
+        </span>
       </a>
-      <a class="contact-card tilt reveal" data-index="4" href="https://wa.me/96171163092" target="_blank" rel="noopener">
-        <div class="k">WhatsApp</div>
-        <div class="v">+961 71 163 092</div>
+
+      <a class="contact-card tilt reveal" data-index="4" href="https://www.linkedin.com/in/nour-mohmd/" target="_blank" rel="noopener">
+        <span class="c-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.94 6 2.5 6S0 4.88 0 3.5 1.06 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.24h4.5V23H.24V8.24ZM8.5 8.24h4.31v2.01h.06c.6-1.13 2.07-2.33 4.26-2.33 4.56 0 5.4 3 5.4 6.9V23h-4.5v-6.55c0-1.56-.03-3.57-2.18-3.57-2.18 0-2.52 1.7-2.52 3.46V23H8.5V8.24Z"/></svg>
+        </span>
+        <span class="c-text">
+          <div class="k">LinkedIn</div>
+          <div class="v">linkedin.com/in/nour-mohmd</div>
+        </span>
       </a>
-      <a class="contact-card tilt reveal" data-index="5" href="mailto:your.email@example.com">
-        <div class="k">Email</div>
-        <div class="v">your.email@example.com</div>
+
+      <a class="contact-card tilt reveal" data-index="5" href="https://www.youtube.com/@EngiSense" target="_blank" rel="noopener">
+        <span class="c-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+        </span>
+        <span class="c-text">
+          <div class="k">YouTube</div>
+          <div class="v">@EngiSense</div>
+        </span>
       </a>
-      <a class="contact-card tilt reveal" data-index="6" href="#">
-        <div class="k">LinkedIn</div>
-        <div class="v">add your profile link</div>
+
+      <a class="contact-card tilt reveal" data-index="6" href="https://wa.me/96171163092" target="_blank" rel="noopener">
+        <span class="c-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.01 2C6.5 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.08L2 22l5.06-1.33A9.94 9.94 0 0 0 12.01 22C17.52 22 22 17.52 22 12S17.52 2 12.01 2Zm5.78 14.14c-.24.68-1.4 1.3-1.93 1.34-.5.05-1.1.07-1.77-.11-.4-.11-.92-.29-1.58-.57-2.78-1.2-4.6-4-4.74-4.19-.14-.19-1.13-1.5-1.13-2.87 0-1.36.72-2.03.97-2.31.25-.28.55-.35.73-.35.18 0 .37 0 .53.01.17.01.4-.06.62.48.24.58.81 2 .88 2.14.07.14.12.31.02.5-.09.19-.14.31-.28.47-.14.16-.3.36-.42.48-.14.14-.29.29-.13.57.17.28.75 1.24 1.61 2 1.11.99 2.04 1.3 2.33 1.44.28.14.45.12.62-.07.17-.19.72-.84.91-1.13.19-.28.38-.24.63-.14.26.09 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.37Z"/></svg>
+        </span>
+        <span class="c-text">
+          <div class="k">WhatsApp</div>
+          <div class="v">+961 71 163 092</div>
+        </span>
+      </a>
+
+      <a class="contact-card tilt reveal" data-index="7" href="mailto:nourmhmd1010@gmail.com">
+        <span class="c-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm19 2.7-8.55 6.4a1 1 0 0 1-1.2 0L2.7 6.7V19h18.3V6.7ZM3 5l9 6.7L21 5H3Z"/></svg>
+        </span>
+        <span class="c-text">
+          <div class="k">Email</div>
+          <div class="v">nourmhmd1010@gmail.com</div>
+        </span>
       </a>
     </div>
   </div>
